@@ -183,7 +183,7 @@ html_theme_options = {
     'show_toc_level': 1,
     'icon_links': [
         dict(name='GitHub',
-             url='https://github.com/open-ephys/twister3docs',
+             url='https://github.com/open-ephys/twister3-docs',
              icon='fab fa-github'),
         dict(name='Twitter',
              url='https://twitter.com/openephys',
@@ -195,7 +195,7 @@ html_theme_options = {
 html_favicon = "_static/images/favicon.png"
 
 html_context = {
-    "github_user": "open-ephys",
+    "github_user": "ahleighton",
     "github_repo": "twister3-docs",
     "github_version": "main",
     "doc_path": "source",
