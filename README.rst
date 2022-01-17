@@ -1,5 +1,5 @@
 ====================================
-ShuttleDrive Documentation
+Twister3 Documentation
 ====================================
 
 This documentation's source template was taken from the `Spinal HDL <https://github.com/SpinalHDL/SpinalDoc-RTD>`_ project.
@@ -48,24 +48,3 @@ and then you can use ``make`` the usual way
    make          # list all the available output format
 
 all the outputs will be in docs folder (for html: docs/html)
-
-without pipenv/virtualenv
--------------------------
-Requirements (system):
-
-* make
-
-Requirements (Python 3):
-
-* sphinx
-* sphinx-rtd-theme
-* sphinxcontrib-wavedrom
-
-After installing the requirements you can run
-
-.. code:: shell
-
-   make html     # for html
-   make latex    # for latex
-   make latexpdf # for latex (will require latexpdf installed)
-   make          # list all the available output format
