@@ -177,19 +177,23 @@ epub_exclude_files = ["search.html"]
 # further.  For a list of options available for each theme, see the
 # documentation.
 html_theme_options = {
-    'external_links': [{'name': 'Open Ephys', 'url': 'https://open-ephys.org'},],
-    'navigation_with_keys': True,
-    'use_edit_page_button': True,
-    'show_toc_level': 1,
-    'icon_links': [
-        dict(name='GitHub',
-             url='https://github.com/open-ephys/twister3-docs',
-             icon='fab fa-github'),
-        dict(name='Twitter',
-             url='https://twitter.com/openephys',
-             icon='fab fa-twitter')
-    ],
-    'footer_items': ['copyright', 'sphinx-version'],
+    "github_url": "https://github.com/open-ephys",
+    "twitter_url": "https://twitter.com/openephys",
+    "external_links": [{"name": "Open Ephys", "url": "https://open-ephys.org"},],
+    "navigation_with_keys": True,
+    # 'search_bar_position' : "navbar",
+    #'canonical_url': '',
+    #'analytics_id': '',
+    #'logo_only': False,
+    #
+    #'prev_next_buttons_location': 'bottom',
+    #'style_external_links': False,
+    # Toc options
+    #'collapse_navigation': False,
+    #'sticky_navigation': True,
+    #    'navigation_depth': 4,
+    #'includehidden': True,
+    #'titles_only': False
 }
 
 html_favicon = "_static/images/favicon.png"
