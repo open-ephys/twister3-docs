@@ -71,8 +71,8 @@ Twister3
               <a href = "https://iopscience.iop.org/article/10.1088/1741-2552/ab77fa" target="_blank" rel="noopener noreferrer">
                 <img src="_static/images/paper.svg" class="card-img-top" height="120">
                 <div class="card-body">
-                  <h5 class="card-title">Twister3 Manuscript</h5>
-                  <p class="card-text">Details on function, characterisation & design</p>
+                  <h5 class="card-title">Manuscript</h5>
+                  <p class="card-text">Function, characterization & design</p>
                 </div>
               </a>
             </div>
