@@ -82,6 +82,7 @@ todo_include_todos = True
 html_theme = "pydata_sphinx_theme"
 html_logo = "_static/images/oe_logo_name.svg"
 html_scaled_image_link = True
+html_title = project
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
@@ -89,6 +90,12 @@ html_scaled_image_link = True
 html_static_path = ["_static"]
 
 html_style = "_static/theme_overrides.css"
+
+
+html_sidebars = {
+    'index': ['search-field.html'],
+    "**": ["sidebar-nav-bs.html"]
+}
 
 # Custom sidebar templates, must be a dictionary that maps document names
 # to template names.
@@ -177,11 +184,22 @@ epub_exclude_files = ["search.html"]
 # further.  For a list of options available for each theme, see the
 # documentation.
 html_theme_options = {
-    "github_url": "https://github.com/open-ephys",
-    "twitter_url": "https://twitter.com/openephys",
-    "external_links": [{"name": "Open Ephys", "url": "https://open-ephys.org"},],
+    'use_edit_page_button': True,
     "navigation_with_keys": True,
-    # 'search_bar_position' : "navbar",
+    "navbar_end": ["navbar-icon-links"],
+    "navbar_align": "content",
+    "footer_start": ["copyright"],
+    'icon_links': [
+        dict(name='GitHub',
+             url='https://github.com/open-ephys/commutator-docs',
+             icon='fab fa-github'),
+        dict(name='Twitter',
+             url='https://twitter.com/openephys',
+             icon='fab fa-twitter'),
+        dict(name='Discord',
+             url='https://discord.gg/WXAx2URNQU',
+             icon='fab fa-discord')
+    ],
     #'canonical_url': '',
     #'analytics_id': '',
     #'logo_only': False,
@@ -206,5 +224,4 @@ html_context = {
     "css_files": ["_static/theme_overrides.css",],
 }
 
-# Option for linkcheck
 linkcheck_anchors = False

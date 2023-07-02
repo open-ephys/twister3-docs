@@ -1,7 +1,7 @@
 .. _userguide:
 
 *************************************************
-User Guide
+User Manual
 *************************************************
 
 .. contents:: Contents
@@ -17,7 +17,7 @@ Twister3 Usage Video
 
 Watch this video to learn how to load bobbins & twist tetrodes. See below for detailed information from the `manuscript <https://iopscience.iop.org/article/10.1088/1741-2552/ab77fa>`_
 
-A) Loading Bobbins
+Loading bobbins
 #######################################
 
 Before twisting electrodes, the bobbins on the wire feeder assembly must be loaded with microwire.
@@ -46,7 +46,7 @@ Finally, to load wire onto the bobbin, the controller is set to mode 1 and then 
 
 The loading processes should be monitored as it begins, to ensure that microwire is being accepted by the bobbin. If there is an issue, pressing the knob on the control unit will halt the process so it can be corrected. Once loading has completed, the process is repeated for the for the remaining bobbins. After each bobbin has be loaded with microwire, they are put back on their axle on the wire feeder assembly. Loose wire ends should point inward on both sides of the assembly (figure below, B2). Finally, the wire shield is replaced.
 
-B) Making twisted wire probes
+Making twisted-wire probes
 #######################################
 
 The following steps detail TWP construction using Twister3. If you are interested in making stereotrodes instead of tetrodes, follow the same steps but only use two bobbins on diagonally opposing sides of the feeder.
@@ -94,7 +94,7 @@ Once the air gun has reached a stable temperature, the nozzle is held ∼5 mm fr
 
 After wire fusing, both hands are used to simultaneously roll each of the bobbins forward until the leaf spring relaxes and there is no tension on the microwire (figure B6). The loose wire above the fused TWP is then cut using scissors (figure B7). When performing this cut, make sure to leave enough free wire for connectorization. Finally, the alligator clip is removed from the magnet in the wire alignment jig and the finished TWP is put into a storage box (figure B8). The process can then be repeated for the next TWP.
 
-C) Selecting device parameters
+Selecting device parameters
 #######################################
 
 Choosing twisting parameters will require some experimentation in order to produce twisted wire probes with the desired geometric and mechanical properties given the user's choice of wire, implant type, and animal model. Two settings of note are the height of the wire feeder above the motor assembly, which determines the probe length and microwire twist pitch and the bobbin stiction threshold which determines the wire tension during twisting and drawing. See `Figure 4 of the manuscript <https://iopscience.iop.org/article/10.1088/1741-2552/ab77fa#jneab77faf4>`_ for the effect of changing the wire feeder height on tetrode characteristics.
