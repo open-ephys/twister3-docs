@@ -10,7 +10,7 @@ Assembly Guide
   partslist.rst
 
 
-This assembly guide is based on the `manuscript <https://iopscience.iop.org/article/10.1088/1741-2552/ab77fa>`_ with some small changes to adapt it to the :ref:`parts list <partslist>` as sold by the Open Ephys Store.
+This assembly guide is based on the `manuscript <https://iopscience.iop.org/article/10.1088/1741-2552/ab77fa>`_ with some small changes to adapt it to the :ref:`parts list <partslist>` as sold by the `Open Ephys Store <https://open-ephys.org/store>`_.
 
 Before getting started, make sure you have everything on the :ref:`parts list <partslist>`.
 
@@ -22,7 +22,7 @@ Before getting started, make sure you have everything on the :ref:`parts list <p
   :backlinks: none
 
 
-A) Assemble Wire Feeder
+Wire feeder
 ##########################################
 
 .. image::  ../_static/images/assembly_figure_6.png
@@ -38,7 +38,7 @@ A) Assemble Wire Feeder
 (6) Install the wire shield above the bobbins using a single M6 screw.
 
 
-B) Assemble Motor
+Motor
 ##########################################
 
 .. image::  ../_static/images/assemble_motor.svg
@@ -53,7 +53,7 @@ B) Assemble Motor
 (6) Attach two additional magnets on top of those you just inserted into alignment plate. Press the spring rotor onto these magnets to press fit them into the spring rotor base. This procedure ensures that magnets will be press fit into the spring rotor base with the correct polarity. To prevent magnets going deeper into the alignment plate rather than into the spring rotor, separate the spring rotor from the alignment plate before applying full pressure. Make sure the magnets are recessed below the bottom surface of the spring rotor so that it rests flat on top of the alignment plate.
 (7) Push the clip magnet into one of the slots on the spring rotor top. In the remaining slot, press the twist alignment jig into position over the magnet.
 
-C) Assemble Wire Clip
+Wire clip
 ##########################################
 
 .. image::  ../_static/images/assemble_clip.png
@@ -64,7 +64,7 @@ C) Assemble Wire Clip
 (1) Put two pieces of heat shrink tubing over the wire clip jaws.
 (2) Shrink into position using the hot air gun. This prevents electrode wire from slipping during a draw. The clip can then be stuck under the wire alignment jig (figure 3).
 
-D) Assemble Wire Guide
+Wire guide
 ##########################################
 
 .. image::  ../_static/images/assemble_wire_guide.png
@@ -76,7 +76,7 @@ D) Assemble Wire Guide
 (1) Screw the wire-guide into a mini, 6 mm diameter optical post.
 (2) Push the optical post into a swivel post holder.
 
-E) Assemble Stock Spool
+Stock spool
 ##########################################
 
 .. image::  ../_static/images/assemble_spool.png
@@ -90,13 +90,14 @@ E) Assemble Stock Spool
 (3) Push a 40 mm, M3 screw through the two bearings and screw into a mini, 6 mm diameter optical post.
 (4) Push the optical post into a swivel post holder.
 
-F) Final Assembly Twister3
+Final assembly
 #########################################
 
 .. image::  ../_static/images/assembly_figure_8.png
   :align: center
   :alt: Twister3 assemble all
 
+|
 
 1) Screw together the large, 1.5" diameter mounting posts and then screw this long post into either the left or right side of the optical bread board. Mount the stock spool assembly in on the opposite side of the optical breadboard using a M6 screw. Its exact position does not matter.
 2) Mount the feeder assembly on the post using the post mounting clamp on its back.

@@ -35,7 +35,7 @@
 
 /* navigation bar: main upper bar color*/
 .navbar {
-  background: #c43939 !important;
+  background: #9a5035 !important;
   font-size: 1em;
 }
 
@@ -60,13 +60,18 @@
   margin-right: 10px;
 }
 
+.search-button {
+  color: white !important;
+  margin-right: 30px;
+}
+
 /* navigation bar: text color of page titles when hovered*/
 .navbar a:hover {
   color: #171717 !important;
   transition-duration: 0.4s;
 }
 
-/* left side links */
+/* left side links 
 .bd-links > .active a {
   color: #3c81be !important;
   transition-duration: 0.4s;
@@ -76,15 +81,15 @@
   color: #5fb5dc !important;
   transition-duration: 0.4s;
   transform: translate(2px, 0px);
-}
+}*/
 
-/* right side links */
+/* right side links 
 .toc-entry > .nav-link.active {
   font-weight: 600;
   color: #344b39;
   background-color: transparent;
   border-left: 2px solid #da714a;
-}
+}*/
 
 /* body links (external) */
 a {
@@ -96,21 +101,6 @@ a:hover {
   text-decoration: none;
 }
 
-a.reference.external:after {
-  font-family: 'Font Awesome 5 Free';
-  font-weight: 900;
-  content: ' \f35d';
-  font-size: 0.5em;
-  vertical-align: super;
-}
-
-a.external-link:after {
-  font-family: 'Font Awesome 5 Free';
-  font-weight: 900;
-  content: ' \f35d';
-  font-size: 0.5em;
-  vertical-align: super;
-}
 
 p.card-reference {
   margin: 2.75rem 0 1.05rem;
@@ -137,7 +127,6 @@ body {
   background-color: white;
   margin-bottom: 1.15rem;
   font-size: 1em;
-  padding-top: 100px;
   color: #242c16;
   font-family: "Source Sans", sans-serif;
 }
@@ -297,7 +286,7 @@ h6 {
 /* logo */
 .navbar-brand {
   position: relative;
-  height: 60px;
+  height: 70px;
   width: auto;
 }
 
@@ -349,17 +338,6 @@ form:focus {
   margin-top: 2em;
 }
 
-/* list line spacing */
-/* ol.simple {
-  margin-bottom: 1em;
-}
-
-
-
-ul.simple {
-  margin-bottom: 1em;
-}
-*/
 ul,
 ol,
 h1,
@@ -369,13 +347,7 @@ h4,
 h5,
 h6 {
   line-height: 1.5;
-}
-
-/* List items in main area, but not in side bars */
-body > li,
-p {
-  line-height: 1.5;
-  margin: 0.3em 0;
+  margin-bottom: 0.7em;
 }
 
 /* ensure images stay within the column bounds*/
@@ -390,7 +362,65 @@ img.align-center {
     margin-right: auto;
     display: block;
 }
-/* change color of Twitter logo */
-i.fa-twitter-square:before {
-  color: #333;
+
+/* Gallery cards */
+
+.gallery-card .card-header {
+  height: 100%;
+  margin-top: 0rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+} /* example of the default height for title */
+
+.bd-content {
+  flex-grow: 1;
+  max-width: 100%;
+}
+
+.bd-page-width {
+  max-width: 100rem;
+}
+
+.bd-sidebar-primary {
+ width: 20%;
+}
+
+strong {
+ font-weight: bold;
+}
+
+/* Landing page cards */
+.card-columns {
+  column-count: 4 !important;
+}
+
+.card-title {
+  margin: 1rem;
+}
+
+.intro-card .card-text {
+  margin:20px 0px;
+  color: var(--onix-txt-color) !important;
+}
+
+.card-img-top {
+  margin-top: 2em;
+}
+
+.card {
+  border: 0;
+}
+
+.intro-card {
+  transition: transform 0.2s ease;
+  border: 0;
+}
+
+.intro-card:hover {
+  transform: scale(1.05);
+}
+
+.col-lg-6 {
+  margin-top: 2em;
 }
