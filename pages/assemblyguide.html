@@ -1,0 +1,604 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Assembly Guide &#8212; Twister3 Docs</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" href="../_static/theme_overrides.css" type="text/css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/sphinx_highlight.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'pages/assemblyguide';</script>
+    <link rel="icon" href="../_static/favicon.png"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Parts List" href="partslist.html" />
+    <link rel="prev" title="User Manual" href="usingtwister.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+<div class="bd-header__inner bd-page-width">
+  <label class="sidebar-toggle primary-toggle" for="__primary">
+    <span class="fa-solid fa-bars"></span>
+  </label>
+  
+  <div class="navbar-header-items__start">
+    
+      <div class="navbar-item">
+  
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/oe_logo_name.svg" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="../_static/oe_logo_name.svg" class="logo__image only-dark" alt="Logo image"/>`);</script>
+  
+  
+</a></div>
+    
+  </div>
+  
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item"><nav class="navbar-nav">
+  <p class="sidebar-header-items__title"
+     role="heading"
+     aria-level="1"
+     aria-label="Site Navigation">
+    Site Navigation
+  </p>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="usingtwister.html">
+                        User Manual
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item current active">
+                      <a class="nav-link nav-internal" href="#">
+                        Assembly Guide
+                      </a>
+                    </li>
+                
+
+                <li class="nav-item">
+                  <a class="nav-link nav-external" href="https://open-ephys.org/twister-3/twister-3">
+                    Purchase
+                  </a>
+                </li>
+                
+  </ul>
+</nav></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+        </div>
+      
+      
+        <div class="navbar-item"><ul class="navbar-icon-links navbar-nav"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/jonnew/twister3" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fab fa-github"></i></span>
+            <label class="sr-only">GitHub</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://twitter.com/openephys" title="Twitter" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fab fa-twitter"></i></span>
+            <label class="sr-only">Twitter</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://discord.gg/WXAx2URNQU" title="Discord" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fab fa-discord"></i></span>
+            <label class="sr-only">Discord</label></a>
+        </li>
+</ul></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+    </div>
+  
+
+  
+    <label class="sidebar-toggle secondary-toggle" for="__secondary">
+      <span class="fa-solid fa-outdent"></span>
+    </label>
+  
+</div>
+
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          <div class="navbar-item"><nav class="navbar-nav">
+  <p class="sidebar-header-items__title"
+     role="heading"
+     aria-level="1"
+     aria-label="Site Navigation">
+    Site Navigation
+  </p>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="usingtwister.html">
+                        User Manual
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item current active">
+                      <a class="nav-link nav-internal" href="#">
+                        Assembly Guide
+                      </a>
+                    </li>
+                
+
+                <li class="nav-item">
+                  <a class="nav-link nav-external" href="https://open-ephys.org/twister-3/twister-3">
+                    Purchase
+                  </a>
+                </li>
+                
+  </ul>
+</nav></div>
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item"><ul class="navbar-icon-links navbar-nav"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/jonnew/twister3" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fab fa-github"></i></span>
+            <label class="sr-only">GitHub</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://twitter.com/openephys" title="Twitter" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fab fa-twitter"></i></span>
+            <label class="sr-only">Twitter</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://discord.gg/WXAx2URNQU" title="Discord" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fab fa-discord"></i></span>
+            <label class="sr-only">Discord</label></a>
+        </li>
+</ul></div>
+        
+      </div>
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item"><nav class="bd-docs-nav bd-links"
+     aria-label="Section Navigation">
+  <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
+  <div class="bd-toc-item navbar-nav"><ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="partslist.html">Parts List</a></li>
+</ul>
+</div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+
+
+<nav aria-label="Breadcrumbs">
+  <ul class="bd-breadcrumbs" role="navigation" aria-label="Breadcrumb">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="../index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    <li class="breadcrumb-item active" aria-current="page">Assembly Guide</li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section id="assembly-guide">
+<span id="assemblyguide"></span><h1>Assembly Guide<a class="headerlink" href="#assembly-guide" title="Permalink to this heading">#</a></h1>
+<div class="toctree-wrapper compound">
+</div>
+<p>This assembly guide is based on the <a class="reference external" href="https://iopscience.iop.org/article/10.1088/1741-2552/ab77fa">manuscript</a> with some small changes to adapt it to the <a class="reference internal" href="partslist.html#partslist"><span class="std std-ref">parts list</span></a> as sold by the <a class="reference external" href="https://open-ephys.org/store">Open Ephys Store</a>.</p>
+<p>Before getting started, make sure you have everything on the <a class="reference internal" href="partslist.html#partslist"><span class="std std-ref">parts list</span></a>.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<nav class="contents local" id="twister3-assembly">
+<p class="topic-title">Twister3 Assembly</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#wire-feeder" id="id1">Wire feeder</a></p></li>
+<li><p><a class="reference internal" href="#motor" id="id2">Motor</a></p></li>
+<li><p><a class="reference internal" href="#wire-clip" id="id3">Wire clip</a></p></li>
+<li><p><a class="reference internal" href="#wire-guide" id="id4">Wire guide</a></p></li>
+<li><p><a class="reference internal" href="#stock-spool" id="id5">Stock spool</a></p></li>
+<li><p><a class="reference internal" href="#final-assembly" id="id6">Final assembly</a></p></li>
+</ul>
+</nav>
+<section id="wire-feeder">
+<h2>Wire feeder<a class="headerlink" href="#wire-feeder" title="Permalink to this heading">#</a></h2>
+<a class="reference internal image-reference" href="../_images/assembly_figure_6.png"><img alt="Twister3 assemble wire feeder" class="align-center" src="../_images/assembly_figure_6.png" style="width: 80%;" /></a>
+<ol class="arabic simple">
+<li><p>Insert press-in components into the feeder base. This includes M3 nut (2x), M3 standoff (2x), and 3/16” diameter dowel pin (2x). This requires a mallet.</p></li>
+<li><p>Mount the feeder base unto the C1545/M mounting clamp using M6 screws (2x). The top of the feeder should be flush with the mounting clamp.</p></li>
+<li><p>Turn each of the two fully-threaded M3 screws into the M3 nut which behind the feeder base. The position of the rod determines the stiction on each bobbin during wire draw. Lower positions provide less stiction. We have found that the second notch is a good position to start with.</p></li>
+<li><p>Bobbin assembly: First insert 2 cube magnets into each bobbin with the same polarity. These magnets will be magnetically mated to the alignment plate on the rotor during bobbin loading. Use the 60 mm M3 screw to mount the bobbin assembly to the standoff captive within the feeder base. Repeat for both sides. The thumb-screw head should be glued onto the M3 screw using epoxy prior to this step.</p></li>
+<li><p>Thread a torsional spring onto the dowel pin. Squeeze it together and then set it between the threaded rod on one side and the shallow groove in each bobbin on the other. Repeat for each bobbin.</p></li>
+<li><p>Install the wire shield above the bobbins using a single M6 screw.</p></li>
+</ol>
+</section>
+<section id="motor">
+<h2>Motor<a class="headerlink" href="#motor" title="Permalink to this heading">#</a></h2>
+<img alt="Twister3 assemble motor" class="align-center" src="../_images/assemble_motor.svg" /><ol class="arabic simple">
+<li><p>Remove the long, M3 step screws from the bottom of the stepper motor (4x).</p></li>
+<li><p>Use 40 mm M3 screws (4x) to attach the motor mount to the bottom of the motor.</p></li>
+<li><p>Fix the rotor base onto the shaft with the M3 set screw.</p></li>
+<li><p>Press fit two magnets into the alignment plate in the same orientation. Use a bobbin to make sure the polarity is correct; the two parts should mate. Make sure the magnets are pushed down until recessed below the plastic surface so that they do not interfere with the flat mating surface of the piece.</p></li>
+<li><p>Insert the alignment plate into the slot on the rotor base.</p></li>
+<li><p>Attach two additional magnets on top of those you just inserted into alignment plate. Press the spring rotor onto these magnets to press fit them into the spring rotor base. This procedure ensures that magnets will be press fit into the spring rotor base with the correct polarity. To prevent magnets going deeper into the alignment plate rather than into the spring rotor, separate the spring rotor from the alignment plate before applying full pressure. Make sure the magnets are recessed below the bottom surface of the spring rotor so that it rests flat on top of the alignment plate.</p></li>
+<li><p>Push the clip magnet into one of the slots on the spring rotor top. In the remaining slot, press the twist alignment jig into position over the magnet.</p></li>
+</ol>
+</section>
+<section id="wire-clip">
+<h2>Wire clip<a class="headerlink" href="#wire-clip" title="Permalink to this heading">#</a></h2>
+<a class="reference internal image-reference" href="../_images/assemble_clip.png"><img alt="Twister3 assemble wire clip" class="align-center" src="../_images/assemble_clip.png" style="width: 265.3px; height: 342.29999999999995px;" /></a>
+<ol class="arabic simple">
+<li><p>Put two pieces of heat shrink tubing over the wire clip jaws.</p></li>
+<li><p>Shrink into position using the hot air gun. This prevents electrode wire from slipping during a draw. The clip can then be stuck under the wire alignment jig (figure 3).</p></li>
+</ol>
+</section>
+<section id="wire-guide">
+<h2>Wire guide<a class="headerlink" href="#wire-guide" title="Permalink to this heading">#</a></h2>
+<a class="reference internal image-reference" href="../_images/assemble_wire_guide.png"><img alt="Twister3 assemble wire guide" class="align-center" src="../_images/assemble_wire_guide.png" style="width: 229.6px; height: 294.0px;" /></a>
+<ol class="arabic simple">
+<li><p>Screw the wire-guide into a mini, 6 mm diameter optical post.</p></li>
+<li><p>Push the optical post into a swivel post holder.</p></li>
+</ol>
+</section>
+<section id="stock-spool">
+<h2>Stock spool<a class="headerlink" href="#stock-spool" title="Permalink to this heading">#</a></h2>
+<a class="reference internal image-reference" href="../_images/assemble_spool.png"><img alt="Twister3 assemble spool" class="align-center" src="../_images/assemble_spool.png" style="width: 555.2px; height: 360.0px;" /></a>
+<ol class="arabic simple">
+<li><p>Push a bearing into each of the stock spool bearing cases.</p></li>
+<li><p>Push each of the bearing cases into the stock spool of microwire.</p></li>
+<li><p>Push a 40 mm, M3 screw through the two bearings and screw into a mini, 6 mm diameter optical post.</p></li>
+<li><p>Push the optical post into a swivel post holder.</p></li>
+</ol>
+</section>
+<section id="final-assembly">
+<h2>Final assembly<a class="headerlink" href="#final-assembly" title="Permalink to this heading">#</a></h2>
+<img alt="Twister3 assemble all" class="align-center" src="../_images/assembly_figure_8.png" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<ol class="arabic simple">
+<li><p>Screw together the large, 1.5” diameter mounting posts and then screw this long post into either the left or right side of the optical bread board. Mount the stock spool assembly in on the opposite side of the optical breadboard using a M6 screw. Its exact position does not matter.</p></li>
+<li><p>Mount the feeder assembly on the post using the post mounting clamp on its back.</p></li>
+<li><p>Mount the rotor assembly directly in front of the post, as close as it will go, using 3 M6 screws.</p></li>
+<li><p>Mount the wire guide assembly into a position that is in close proximity to the motor assembly using a single M6 screw. The tip of the wire guide should be able to extend into the center grove of a wire bobbin when it is mounted on the rotor bases for wire reloading.</p></li>
+</ol>
+<ol class="arabic simple" id="refcentering" start="5">
+<li><p>With the wire-clip mechanism installed, slide the adjustment plate around until the motor axis of rotation (dotted black line) is precisely in line with the wire bundle (red lines). When properly aligned, the apex of the wire bundle will appear motionless during motor turning.</p></li>
+</ol>
+</section>
+</section>
+
+
+                </article>
+              
+              
+              
+                <footer class="bd-footer-article">
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="usingtwister.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">User Manual</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="partslist.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Parts List</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div></div>
+  
+</div>
+
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#wire-feeder">Wire feeder</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#motor">Motor</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#wire-clip">Wire clip</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#wire-guide">Wire guide</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#stock-spool">Stock spool</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#final-assembly">Final assembly</a></li>
+</ul>
+  </nav></div>
+
+  <div class="sidebar-secondary-item">
+  
+  <div class="tocsection editthispage">
+    <a href="https://github.com/open-ephys/twister3-docs/edit/main/source/pages/assemblyguide.rst">
+      <i class="fa-solid fa-pencil"></i>
+      
+      
+        
+          Edit on GitHub
+        
+      
+    </a>
+  </div>
+</div>
+
+  <div class="sidebar-secondary-item">
+  <div class="tocsection sourcelink">
+    <a href="../_sources/pages/assemblyguide.rst.txt">
+      <i class="fa-solid fa-file-lines"></i> Show Source
+    </a>
+  </div>
+</div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item">
+  <p class="copyright">
+    
+      © Copyright 2010-2023, Open Ephys &amp; Contributors.
+      <br/>
+    
+  </p>
+</div>
+      
+    </div>
+  
+  
+    <div class="footer-items__end">
+      
+        <div class="footer-item"><p class="theme-version">
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.13.3.
+</p></div>
+      
+    </div>
+  
+</div>
+
+  </footer>
+  </body>
+</html>
