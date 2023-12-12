@@ -17,6 +17,20 @@ Twister3 Usage Video
 
 Watch this video to learn how to load bobbins & twist tetrodes. See below for detailed information from the `manuscript <https://iopscience.iop.org/article/10.1088/1741-2552/ab77fa>`_
 
+Connecting the motor to the controller
+#######################################
+The motor has to be connected to the controller box with each colored cable in appropriate connector slot. The table below follows the usual color convention, but check your motor's specifications (see also the picture in the next section):
+
+.. csv-table::
+   :widths: 18, 80
+
+   "*B2*", "Blue"
+   "*B1*", "Red"
+   "*A1*", "Black"
+   "*A2*", "Green"
+
+To achieve this, you have to cut the plastic connector from the motor wire, strip each wire, and use a screwdriver to open each slot in the controller box connector, place the wire in the slot and tighten the screw to make the connection.
+
 Loading bobbins
 #######################################
 
